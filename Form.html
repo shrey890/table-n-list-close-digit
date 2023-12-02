@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			body {
+				margin-top: 25px;
+				font-size: larger;
+				font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+					"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+				
+			}
+			input {
+				border-radius: 8px;
+				height: 22px;
+				border: 1px solid rgb(87, 70, 70);
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+			}
+			input:hover {
+				transform: scale(2.02);
+				font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+					"Lucida Sans", Arial, sans-serif;
+			}
+			.hu__hu__ {
+				animation: hu__hu__ infinite 2s ease-in-out;
+			}
+			@keyframes hu__hu__ {
+				50% {
+					transform: translateY(30px);
+				}
+			}
+		</style>
+		<link rel="stylesheet" href="style.css" />
+		<title>Document</title>
+	</head>
+	<body class="color-change-4x">
+		<div style="text-align: center; margin: 5px">
+			<h1 class="hu__hu__ glitch">Form Validation</h1>
+			<br />
+			<form class="puff-in-center">
+				<label>Name</label>
+				<input placeholder="name" type="text" name="name" required />
+				<br />
+				<br />
+				<label>E-mail</label>
+				<input
+					autofocus
+					placeholder="email"
+					type="email"
+					name="email"
+					pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+					required
+					autocomplete="off"
+				/>
+				<br />
+				<br />
+				<label for="">Password</label>
+				<input type="password" name="pass" id="pass" />
+				<br /><br />
+				<label>Age</label>
+				<input
+					type="number"
+					placeholder="age"
+					name="age"
+					min="18"
+					max="99"
+					required
+				/>
+				<br />
+				<br />
+				<label for="date">Date Validation</label>
+				<input
+					type="date"
+					name="date"
+					min="2023-12-01"
+					max="2024-01-02"
+					required
+				/>
+				<br />
+				<br />
+				<label for="file">File</label>
+				<input type="file" name="file" multiple />
+				<br />
+				<br />
+				<label for="number">Step</label>
+				<input type="number" name="number" step="10" />
+				<br />
+				<br />
+				<label for="">url</label>
+				<input type="url" name="number" step="10" />
+				<br />
+				<br />
+				<label for="">tel</label>
+				<input type="tel" name="number" step="10" />
+				<br />
+				<br />
+				<label for="">search</label>
+				<input type="search" name="number" step="10" />
+				<br />
+				<br />
+				<label for="">Reset</label>
+				<input type="reset" name="number" step="10" />
+				<br />
+				<br />
+				  <input type="radio" id="html" name="fav_language" value="HTML" />  
+				<label for="html">HTML</label><br />
+				  <input type="radio" id="css" name="fav_language" value="CSS" />  
+				<label for="css">CSS</label><br />
+				 
+				<input
+					type="radio"
+					id="javascript"
+					name="fav_language"
+					value="JavaScript"
+				/>
+				  <label for="javascript">JavaScript</label>
+
+				<br />
+				<br />
+				<label for="">checkbox</label>
+				<div class="checkbox-wrapper-41">
+					<input type="checkbox" title="checkbox" name="check" id="check" />
+				</div>
+				<br /><br />
+				<label for="">Address</label>
+				<textarea name="" id="" cols="20" rows="1"></textarea>
+
+				<br /><br />
+
+				<button class="button-40">Submit</button>
+			</form>
+		</div>
+		<footer style="text-align: center; margin-top: 290px">
+			<small>&copy; Shrey</small>
+		</footer>
+	</body>
+</html>
